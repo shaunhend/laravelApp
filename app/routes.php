@@ -18,3 +18,7 @@ Route::get('/', function()
 
 
 Route::resource('products', 'ProductsController');
+
+Route::resource('people', 'PeopleController');
+
+Route::resource('product_categories', 'Product_categoriesController');
