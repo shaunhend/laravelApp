@@ -78,7 +78,7 @@ return array(
 	|
 	*/
 
-	'key' => 'Vru0NZTosHjh19pMBl1JQmIKBdrdqheK',
+	'key' => '95wi8oZnZJmPhlWsCJz05q6UaHeUmRha',
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 
@@ -146,7 +146,7 @@ return array(
 	| This array of class aliases will be registered when this application
 	| is started. However, feel free to register as many as you wish as
 	| the aliases are "lazy" loaded so they don't hinder performance.
-	
+	|
 	*/
 
 	'aliases' => array(

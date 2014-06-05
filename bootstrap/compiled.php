@@ -8350,6 +8350,10 @@ class Logger implements LoggerInterface
         }
         return array_shift($this->handlers);
     }
+    public function getHandlers()
+    {
+        return $this->handlers;
+    }
     public function pushProcessor($callback)
     {
         if (!is_callable($callback)) {
@@ -8363,6 +8367,10 @@ class Logger implements LoggerInterface
             throw new \LogicException('You tried to pop from an empty processor stack.');
         }
         return array_shift($this->processors);
+    }
+    public function getProcessors()
+    {
+        return $this->processors;
     }
     public function addRecord($level, $message, array $context = array())
     {
