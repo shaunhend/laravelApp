@@ -9,23 +9,29 @@
 <table class="table table-striped">
 	<thead>
 		<tr>
-			<th>Reference</th>
-				<th>Descript</th>
-				<th>Img</th>
-				<th>Validto</th>
+			<th>Reference_no</th>
+				<th>Product_title</th>
+				<th>Description</th>
 				<th>Turnaround</th>
-				<th>Minorder</th>
+				<th>Min_order</th>
+				<th>Valid_until</th>
+				<th>Product_category</th>
+				<th>Company</th>
+				<th>Image</th>
 		</tr>
 	</thead>
 
 	<tbody>
 		<tr>
-			<td>{{{ $product->reference }}}</td>
-					<td>{{{ $product->descript }}}</td>
-					<td>{{{ $product->img }}}</td>
-					<td>{{{ $product->validto }}}</td>
+			<td>{{{ $product->reference_no }}}</td>
+					<td>{{{ $product->product_title }}}</td>
+					<td>{{{ $product->description }}}</td>
 					<td>{{{ $product->turnaround }}}</td>
-					<td>{{{ $product->minorder }}}</td>
+					<td>{{{ $product->min_order }}}</td>
+					<td>{{{ $product->valid_until }}}</td>
+					<td>{{{ $product->product_category }}}</td>
+					<td>{{{ $product->company }}}</td>
+					<td>{{{ $product->image }}}</td>
                     <td>
                         {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('products.destroy', $product->id))) }}
                             {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}

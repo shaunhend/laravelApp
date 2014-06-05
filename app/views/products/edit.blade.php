@@ -19,30 +19,23 @@
 {{ Form::model($product, array('class' => 'form-horizontal', 'method' => 'PATCH', 'route' => array('products.update', $product->id))) }}
 
         <div class="form-group">
-            {{ Form::label('reference', 'Reference:', array('class'=>'col-md-2 control-label')) }}
+            {{ Form::label('reference_no', 'Reference_no:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::text('reference', Input::old('reference'), array('class'=>'form-control', 'placeholder'=>'Reference')) }}
+              {{ Form::text('reference_no', Input::old('reference_no'), array('class'=>'form-control', 'placeholder'=>'Reference_no')) }}
             </div>
         </div>
 
         <div class="form-group">
-            {{ Form::label('descript', 'Descript:', array('class'=>'col-md-2 control-label')) }}
+            {{ Form::label('product_title', 'Product_title:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::textarea('descript', Input::old('descript'), array('class'=>'form-control', 'placeholder'=>'Descript')) }}
+              {{ Form::text('product_title', Input::old('product_title'), array('class'=>'form-control', 'placeholder'=>'Product_title')) }}
             </div>
         </div>
 
         <div class="form-group">
-            {{ Form::label('img', 'Img:', array('class'=>'col-md-2 control-label')) }}
+            {{ Form::label('description', 'Description:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::text('img', Input::old('img'), array('class'=>'form-control', 'placeholder'=>'Img')) }}
-            </div>
-        </div>
-
-        <div class="form-group">
-            {{ Form::label('validto', 'Validto:', array('class'=>'col-md-2 control-label')) }}
-            <div class="col-sm-10">
-              {{ Form::text('validto', Input::old('validto'), array('class'=>'form-control', 'placeholder'=>'Validto')) }}
+              {{ Form::text('description', Input::old('description'), array('class'=>'form-control', 'placeholder'=>'Description')) }}
             </div>
         </div>
 
@@ -54,9 +47,37 @@
         </div>
 
         <div class="form-group">
-            {{ Form::label('minorder', 'Minorder:', array('class'=>'col-md-2 control-label')) }}
+            {{ Form::label('min_order', 'Min_order:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::input('number', 'minorder', Input::old('minorder'), array('class'=>'form-control')) }}
+              {{ Form::input('number', 'min_order', Input::old('min_order'), array('class'=>'form-control')) }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            {{ Form::label('valid_until', 'Valid_until:', array('class'=>'col-md-2 control-label')) }}
+            <div class="col-sm-10">
+              {{ Form::text('valid_until', Input::old('valid_until'), array('class'=>'form-control', 'placeholder'=>'Valid_until')) }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            {{ Form::label('product_category', 'Product_category:', array('class'=>'col-md-2 control-label')) }}
+            <div class="col-sm-10">
+              {{ Form::text('product_category', Input::old('product_category'), array('class'=>'form-control', 'placeholder'=>'Product_category')) }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            {{ Form::label('company', 'Company:', array('class'=>'col-md-2 control-label')) }}
+            <div class="col-sm-10">
+              {{ Form::text('company', Input::old('company'), array('class'=>'form-control', 'placeholder'=>'Company')) }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            {{ Form::label('image', 'Image:', array('class'=>'col-md-2 control-label')) }}
+            <div class="col-sm-10">
+              {{ Form::text('image', Input::old('image'), array('class'=>'form-control', 'placeholder'=>'Image')) }}
             </div>
         </div>
 
