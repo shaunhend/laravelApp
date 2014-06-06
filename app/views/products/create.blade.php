@@ -63,21 +63,21 @@
         <div class="form-group">
             {{ Form::label('product_category', 'Product_category:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::text('product_category', Input::old('product_category'), array('class'=>'form-control', 'placeholder'=>'Product_category')) }}
+              {{ Form::select('product_category', $category_options , Input::old('product_category'), ['class' => 'form-control input-md']) }}
             </div>
         </div>
 
         <div class="form-group">
             {{ Form::label('company', 'Company:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::text('company', Input::old('company'), array('class'=>'form-control', 'placeholder'=>'Company')) }}
+            {{ Form::select('company', $company_options , Input::old('company'), ['class' => 'form-control input-md']) }}
             </div>
         </div>
 
         <div class="form-group">
             {{ Form::label('image', 'Image:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::text('image', Input::old('image'), array('class'=>'form-control', 'placeholder'=>'Image')) }}
+              {{ Form::file('image', Input::old('image'), array('class'=>'form-control', 'placeholder'=>'Image')) }}
             </div>
         </div>
 
