@@ -1,0 +1,40 @@
+@import "_bootstrap.min",
+		"_media-queries";
+
+
+
+
+// colors //
+
+$header-color: #34495e;
+
+$white: #ecf0f1;
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+
+	display: inline;
+}
+
+body{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+
+.row{
+
+	&.header__row{
+		background: $header-color;
+		color: $white;	}
+
+}
