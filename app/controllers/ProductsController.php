@@ -35,11 +35,12 @@ class ProductsController extends BaseController {
 	{
 
 
-	$category_options = DB::table('product_categories')->lists('category');
+	$category_options = DB::table('product_categories')->lists('category', 'category');
 
 	//$company_options = product_categories::lists('category', 'id');
 
-	$company_options = Company::lists('company_name', 'id');
+	$company_options = Company::lists('company_name', 'company_name');
+	
 
 	return View::make('products.create')->with('company_options', $company_options)->with('category_options', $category_options);
 

@@ -32,13 +32,6 @@
             </div>
         </div>
 
-        <div class="form-group">
-            {{ Form::label('people_category', 'People_category:', array('class'=>'col-md-2 control-label')) }}
-            <div class="col-sm-10">
-              {{ Form::text('people_category', Input::old('people_category'), array('class'=>'form-control', 'placeholder'=>'People_category')) }}
-            </div>
-        </div>
-
 
 <div class="form-group">
     <label class="col-sm-2 control-label">&nbsp;</label>

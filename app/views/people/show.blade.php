@@ -11,7 +11,6 @@
 		<tr>
 			<th>Name</th>
 				<th>Email</th>
-				<th>People_category</th>
 		</tr>
 	</thead>
 
@@ -19,7 +18,6 @@
 		<tr>
 			<td>{{{ $person->name }}}</td>
 					<td>{{{ $person->email }}}</td>
-					<td>{{{ $person->people_category }}}</td>
                     <td>
                         {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('people.destroy', $person->id))) }}
                             {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}

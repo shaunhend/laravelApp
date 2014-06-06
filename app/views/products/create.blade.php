@@ -70,7 +70,7 @@
         <div class="form-group">
             {{ Form::label('company', 'Company:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-            {{ Form::select('company', $company_options , Input::old('company'), ['class' => 'form-control input-md']) }}
+            {{ Form::select('company', $company_options, Input::old('company'), ['class' => 'form-control input-md']) }}
             </div>
         </div>
 

@@ -5,7 +5,6 @@ class Person extends Eloquent {
 
 	public static $rules = array(
 		'name' => 'required',
-		'email' => 'required',
-		'people_category' => 'required'
+		'email' => 'required'
 	);
 }

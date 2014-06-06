@@ -33,7 +33,10 @@ class Product_categoriesController extends BaseController {
 	 */
 	public function create()
 	{
-		return View::make('product_categories.create');
+		
+		$contact = DB::table('people')->lists('email', 'email');
+
+		return View::make('product_categories.create')->with('contact', $contact);
 	}
 
 	/**

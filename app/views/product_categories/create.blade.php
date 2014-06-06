@@ -28,7 +28,7 @@
         <div class="form-group">
             {{ Form::label('associated_contact', 'Associated_contact:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::text('associated_contact', Input::old('associated_contact'), array('class'=>'form-control', 'placeholder'=>'Associated_contact')) }}
+                {{ Form::select('associated_contact', $contact, Input::old('associated_contact'), ['class' => 'form-control input-md']) }}
             </div>
         </div>
 
