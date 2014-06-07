@@ -1,11 +1,13 @@
 @extends('layouts.scaffold')
 
 @section('main')
+<div class="col-xs-6 col-sm-7 col-md-9 header__text">
+<h1>Categories</h1>
+</div>
+<div class="col-xs-6 col-sm-5 col-md-3">
 
-<h1>All Product_categories</h1>
-
-<p>{{ link_to_route('product_categories.create', 'Add New Product_category', null, array('class' => 'btn btn-lg btn-success')) }}</p>
-
+<p>{{ link_to_route('product_categories.create', 'Add New Category', null, array('class' => 'btn btn-lg btn-success')) }}</p>
+</div>
 @if ($product_categories->count())
 	<table class="table table-striped">
 		<thead>

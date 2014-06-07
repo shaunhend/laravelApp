@@ -2,10 +2,13 @@
 
 @section('main')
 
-<h1>All People</h1>
 
-<p>{{ link_to_route('people.create', 'Add New Person', null, array('class' => 'btn btn-lg btn-success')) }}</p>
-
+<div class="col-xs-6 col-sm-7 col-md-9 header__text">
+	<h1>Our&nbsp;People</h1>
+</div>
+<div class="col-xs-6 col-sm-5 col-md-3">
+	<p>{{ link_to_route('people.create', 'Add New Contact', null, array('class' => 'btn btn-lg btn-success')) }}</p>
+</div>
 @if ($people->count())
 	<table class="table table-striped">
 		<thead>

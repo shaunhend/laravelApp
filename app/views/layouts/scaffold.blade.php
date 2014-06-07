@@ -24,7 +24,7 @@
             <li class="active"><a href="/products">Products</a></li>
             <li><a href="/product_categories">Categories</a></li>
             <li><a href="/companies">Companies</a></li>
-            <li><a href="/people">People</a></li>
+            <li><a href="/people">Our People</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

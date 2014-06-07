@@ -2,10 +2,12 @@
 
 @section('main')
 
-<h1>All Companies</h1>
-
-<p>{{ link_to_route('companies.create', 'Add New Company', null, array('class' => 'btn btn-lg btn-success')) }}</p>
-
+<div class="col-xs-6 col-sm-7 col-md-9 header__text">
+	<h1>Companies</h1>
+</div>
+<div class="col-xs-6 col-sm-5 col-md-3">
+	<p>{{ link_to_route('companies.create', 'Add New Company', null, array('class' => 'btn btn-lg btn-success')) }}</p>
+</div>
 @if ($companies->count())
 	<table class="table table-striped">
 		<thead>
