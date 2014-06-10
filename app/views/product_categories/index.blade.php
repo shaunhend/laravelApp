@@ -13,6 +13,7 @@
 		<thead>
 			<tr>
 				<th>Category</th>
+				<th>Description</th>
 				<th>Associated_contact</th>
 				<th>&nbsp;</th>
 			</tr>
@@ -22,6 +23,7 @@
 			@foreach ($product_categories as $product_category)
 				<tr>
 					<td>{{{ $product_category->category }}}</td>
+					<td>{{{ $product_category->cat_description}}}</td>
 					<td>{{{ $product_category->associated_contact }}}</td>
                     <td>
                         {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('product_categories.destroy', $product_category->id))) }}

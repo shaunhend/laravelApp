@@ -10,13 +10,15 @@
 	<thead>
 		<tr>
 			<th>Category</th>
-				<th>Associated_contact</th>
+			<th>Description</th>
+			<th>Associated_contact</th>
 		</tr>
 	</thead>
 
 	<tbody>
 		<tr>
 			<td>{{{ $product_category->category }}}</td>
+			<td>{{{ $product-category->cat_description }}}</td>
 					<td>{{{ $product_category->associated_contact }}}</td>
                     <td>
                         {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('product_categories.destroy', $product_category->id))) }}

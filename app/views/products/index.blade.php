@@ -2,7 +2,6 @@
 
 @section('main')
 
-
 <div class="col-xs-6 col-sm-7 col-md-9 header__text">
 <h1>Products</h1>
 </div>

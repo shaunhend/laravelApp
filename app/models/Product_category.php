@@ -5,6 +5,7 @@ class Product_category extends Eloquent {
 
 	public static $rules = array(
 		'category' => 'required',
+		'cat_description' => 'required',
 		'associated_contact' => 'required'
 	);
 }

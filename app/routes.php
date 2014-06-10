@@ -16,6 +16,14 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
+Route::get('/store', function()
+{
+	return View::make('products.store');
+});
+
+Route::get('/store', array('as' => 'products.store', 'uses' => 'ProductsController@product_display'));
+
+
 
 Route::resource('products', 'ProductsController');
 

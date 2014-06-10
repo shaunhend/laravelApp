@@ -26,6 +26,13 @@
         </div>
 
         <div class="form-group">
+            {{ Form::label('cat_description', 'Description:', array('class'=>'col-md-2 control-label')) }}
+            <div class="col-sm-10">
+                {{ Form::textarea('cat_description', Input::old('cat_description'), array('class'=>'form-control', 'placeholder'=>'cat_description')) }}
+            </div>
+        </div>
+
+        <div class="form-group">
             {{ Form::label('associated_contact', 'Associated_contact:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
                 {{ Form::select('associated_contact', $contact, Input::old('associated_contact'), ['class' => 'form-control input-md']) }}

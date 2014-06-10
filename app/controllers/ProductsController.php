@@ -31,15 +31,24 @@ class ProductsController extends BaseController {
 	 *
 	 * @return Response
 	 */
+
+	public function product_display()
+	{
+		$products = $this->product->all();
+
+		return View::make('products.store', compact('products'));
+	}
+
 	public function create()
 	{
 
 
-	$category_options = DB::table('product_categories')->lists('category', 'category');
+	//$category_options = DB::table('product_categories')->lists('category', 'category');
 
-	//$company_options = product_categories::lists('category', 'id');
+	$category_options = Product_category::lists('category', 'category');
 
 	$company_options = Company::lists('company_name', 'company_name');
+
 	
 
 	return View::make('products.create')->with('company_options', $company_options)->with('category_options', $category_options);
