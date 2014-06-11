@@ -35,9 +35,11 @@ class ProductsController extends BaseController {
 	public function product_display()
 	{
 		$products = $this->product->all();
+		$companies = Company::all();
 
-		return View::make('products.store', compact('products'));
+		return View::make('products.store', compact('products', 'companies'));
 	}
+
 
 	public function create()
 	{

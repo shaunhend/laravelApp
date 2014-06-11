@@ -1,6 +1,7 @@
 <?php
 
 class Product extends Eloquent {
+
 	protected $guarded = array();
 
 	public static $rules = array(
@@ -14,4 +15,9 @@ class Product extends Eloquent {
 		'company' => 'required',
 		'image' => 'required'
 	);
+
+	public function company()
+    {
+        return $this->hasOne('Company');
+    }
 }

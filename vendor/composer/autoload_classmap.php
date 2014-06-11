@@ -29,6 +29,7 @@ return array(
     'ClassPreloader\\Parser\\FileVisitor' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/FileVisitor.php',
     'ClassPreloader\\Parser\\NodeTraverser' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/NodeTraverser.php',
     'CompaniesController' => $baseDir . '/app/controllers/CompaniesController.php',
+    'CompaniesTableSeeder' => $baseDir . '/app/database/seeds/CompaniesTableSeeder.php',
     'Company' => $baseDir . '/app/models/Company.php',
     'CreateCompaniesTable' => $baseDir . '/app/database/migrations/2014_06_05_160135_create_companies_table.php',
     'CreatePeopleTable' => $baseDir . '/app/database/migrations/2014_06_05_160103_create_people_table.php',

@@ -30,40 +30,42 @@
 
 		<div class="row">
 
+			@foreach ($companies as $comp) 
+
 			<div class="col-md-12">
 
-				<h3>Milton Roy</h3>
+				<h3>{{{$comp->company_name }}}</h3>
 
 			</div>
+
+			
 
 		</div>
 
 		<div class="row">
 
-			<div class="col-xs-12 col-sm-4 col-md-5" style="height:18em; background:#267fff;">
+			@foreach ($products as $product) 
+			
 
-				<div class="col-xs-4 col-sm-4 col-md-4" style="height:100%; background: #999;"><h1>IMG</h1></div>
+			<div class="col-xs-12 col-sm-6 col-md-5" style="height:14em; background:#fff249;">
 
-				<div class="col-xs-8 col-sm-8 col-md-8">
+				<div class="col-xs-4 col-sm-5 col-md-5" style="height:100%; background: #999;"><h1>IMG</h1></div>
 
-				<div class="row"><p>item reference</p></div>
-				<div class="row" style="margin-top:-20px;"><h3>ITEM TITLE</h3></div>
-				<div class="row"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget pellentesque dui. Morbi vulputate, leo eget iaculis elementum, felis neque iaculis lorem, quis malesuada diam dui eu ante.</p></div>
+				<div class="col-xs-8 col-sm-7 col-md-7">
+
+				<div class="row"><p>{{{ $product->reference_no}}}</p></div>
+				<div class="row" style="margin-top:-20px;"><h3>{{{ $product->product_title }}}</h3></div>
+				<div class="row"><p>{{{ $product->description }}}</p></div>
 				<div class="row"><p>more information...</p></div>
 
 				</div>
 
 			</div>
 
-			<div class="col-xs-12 col-sm-4 col-md-5" style="height:12em; background:#fff267;"></div>
 
-		</div>
+			@endforeach
 
-		<div class="row">
-
-			<div class="col-sm-4 col-md-4" style="height:12em; background:#ff3452;"></div>
-
-			<div class="col-sm-4 col-md-4" style="height:12em; background:#267fff;"></div>
+			@endforeach
 
 		</div>
 
