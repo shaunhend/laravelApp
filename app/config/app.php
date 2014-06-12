@@ -122,6 +122,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Dollar\Generators\GeneratorsServiceProvider',
+		'Codesleeve\LaravelStapler\LaravelStaplerServiceProvider',
 
 	),
 

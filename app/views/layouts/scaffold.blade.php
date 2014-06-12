@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('css/dropzone.css') }}">
+    {{ HTML::style('css/dropzone.css');}}
 </head>
 
 <body>
@@ -51,7 +51,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{ URL::asset('js/vendor/bootstrap.min.js') }}"></script>
-    <!--<script src="{{ URL::asset('js/dropzone.js') }}"></script>-->
+    <script src="{{ URL::asset('js/dropzone.js') }}"></script>
 
 </body>
 </html>

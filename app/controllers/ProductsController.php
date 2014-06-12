@@ -71,6 +71,8 @@ class ProductsController extends BaseController {
 		{
 			$this->product->create($input);
 
+			//$user = Product::create(['avatar' => Input::file('avatar')]);
+
 			return Redirect::route('products.index');
 		}
 

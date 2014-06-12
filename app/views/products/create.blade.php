@@ -16,7 +16,7 @@
     </div>
 </div>
 
-{{ Form::open(array('route' => 'products.store', 'class' => 'form-horizontal')) }}
+{{ Form::open(array('route' => 'products.store', 'class' => 'form-horizontal', 'files' => true)) }}
 
         <div class="form-group">
             {{ Form::label('reference_no', 'Reference_no:', array('class'=>'col-md-2 control-label')) }}
@@ -74,10 +74,18 @@
             </div>
         </div>
 
-        <div class="form-group">
+        <!--<div class="form-group">
             {{ Form::label('image', 'Image:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
               {{ Form::file('image', Input::old('image'), array('class'=>'form-control', 'placeholder'=>'Image')) }}
+            </div>
+        </div>-->
+
+
+       <div class="form-group">
+            {{ Form::label('image', 'Image:', array('class'=>'col-md-2 control-label')) }}
+            <div class="col-sm-10">
+              {{ Form::file('avatar') }}
             </div>
         </div>
 
@@ -90,6 +98,9 @@
 </div>
 
 {{ Form::close() }}
+
+      <!--{{ Form::open(array('route' => 'products.store', 'class' => 'form-horizontal dropzone', 'id' => 'my-awesome-dropzone', 'files' => true)) }}
+        {{ Form::close() }}-->
 
 @stop
 
